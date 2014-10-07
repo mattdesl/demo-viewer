@@ -2,7 +2,7 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-[runnable mock](https://mattdesl.github.io/demo-viewer/app/demo.html)
+[runnable mock](http://mattdesl.github.io/demo-viewer/app/demo.html)
 
 Experimentations with promises and functional animations for a portfolio reel.
 
