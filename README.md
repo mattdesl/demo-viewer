@@ -2,20 +2,37 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-a portfolio for my site
-- @mattdesl
+experimentations with promises and functional animations
 
 
+### examples
 
-Experimentation with promises and framework structure for richly animated applications.
+the logic for the carousel:
 
 ```js
+function carousel() {
+	//wrap the views as Transitions
+	var prevState = Transition(last||{}, data)
+	var nextState = Transition(next||{}, data)
 
-var view = Transition(item)
-view
-	.create()           //initialize the element
-	.then(function() {  //animate in the element
-		
-	})
-
+	//handle sequencing, return the promise
+	return prevState.hide()
+		.then(prevState.dispose)
+		.then(nextState.create)
+		.then(nextState.show)
+}
 ```
+
+app startup:
+
+```js
+//wrap all the top-level views as a Transition
+var states = Transitions.all(views, app)
+
+states.create()         //initialize views
+	.then(startLoop)    //start render loop
+	.then(states.show)  //animate in all views
+	.then(doSomething)  //optional further processing
+```
+
+Some of the top level views have "sub views" as content. This allows for easy layering and interaction of content across differnt sections (e.g. constant footer or arrow buttons).
