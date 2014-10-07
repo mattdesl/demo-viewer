@@ -4,6 +4,7 @@
 
 experimentations with promises and functional animations
 
+Also see [transitions](https://github.com/mattdesl/transitions).
 
 ### examples
 
