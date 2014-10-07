@@ -7,6 +7,7 @@ require('domready')(function() {
 	})
 
 	document.body.appendChild(app.element)
-	app.make() //creates all views and animates them in
-		// .then(app.stop.bind(app)) //stop render loop
+	app.make() 
+	
+	// .then(app.stop.bind(app)) //stop render loop
 })
