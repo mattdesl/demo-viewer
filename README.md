@@ -8,7 +8,7 @@ Experimentations with promises and functional animations for a portfolio reel.
 
 Also see [transitions](https://github.com/mattdesl/transitions).
 
-### mock
+### comp
 
 [![mock](http://i.imgur.com/7p0WjEo.png)](mattdesl.github.io/demo-viewer/app/demo.html)
 
