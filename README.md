@@ -9,3 +9,13 @@ a portfolio for my site
 
 Experimentation with promises and framework structure for richly animated applications.
 
+```js
+
+var view = Transition(item)
+view
+	.create()           //initialize the element
+	.then(function() {  //animate in the element
+		
+	})
+
+```
