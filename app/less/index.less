@@ -17,8 +17,6 @@ body {
 @edge-padding: 40px;
 
 .main-canvas {
-	box-sizing: border-box;
-	border: 0px solid white;
 }
 
 .arrow-left, .arrow-right {
@@ -65,4 +63,15 @@ p {
 	margin: 0;
 	font-size: 14px;
 	color: #303030;
+}
+
+.border {
+	width: 100%;
+	box-sizing: border-box;
+	height: 100%;
+	border: 0px solid white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
 }
