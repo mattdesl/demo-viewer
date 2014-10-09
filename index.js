@@ -8,4 +8,6 @@ module.exports = function() {
 		document.body.appendChild(app.element)
 		app.make()
 	})
+	
+	require('./lib/view-router').start()
 }
