@@ -1,12 +1,13 @@
 @import "shapes.less";
 @import "fonts.less";
-@import "sections.less";
+@import "content.less";
 @import "mixins.less";
 @import "footer.less";
 @import "links.less";
+@import "about.less";
+@import "buttons.less";
 
 body {
-	.serif();
 	margin: 0;
 	overflow: hidden;
 }
@@ -19,13 +20,26 @@ body {
 .main-canvas {
 }
 
+.main {
+	.serif();
+}
+
+.button-fade() {
+	cursor: pointer;
+	opacity: 0.8;
+	.transition(opacity 0.5s ease);
+
+	&:hover {
+		opacity: 1.0;
+	}
+}
+
 .arrow-left, .arrow-right {
 	margin: auto;
 	position: absolute;
 	top: 0; 
 	bottom: 0;
-	cursor: pointer;
-	.transition(opacity 0.5s ease);
+	.button-fade;
 }
 
 .arrow-left {

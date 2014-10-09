@@ -3,10 +3,20 @@
 	-moz-transition:    @transition;
 	-ms-transition:     @transition; 
 	-o-transition:      @transition;  
+	transition:         @transition;  
 }
 .transform(@string){
-	-webkit-transform: @string;
+	-webkit-transform:   @string;
 	-moz-transform: 	 @string;
 	-ms-transform: 		 @string;
 	-o-transform: 		 @string;
+	transform: 	    	 @string;
+} 
+.transform-style(@string) {
+	-webkit-transform-style:     @string;
+	-moz-transform-style: 		 @string;
+	-ms-transform-style: 		 @string;
+	-o-transform-style: 		 @string;
+	transform-style: 	    	 @string;
 }
+  
